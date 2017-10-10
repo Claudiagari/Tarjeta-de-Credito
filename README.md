@@ -1,0 +1,7 @@
+## Tarjeta de Crédito Válida
+###### Web que permite validar por medio de una función si el número de una tarjeta de crédito es válida, se usara el algorítmo de Luhn.
+### - Diagrama de flujo
+![ alternativo](https://fotos.subefotos.com/9e065a39f412abf69ff4374f66e4cd80o.jpg)
+
+### - Pseudocódigo
+##### Por medio de un prompt se le pedira al usuario su número de tarjeta, se creara la función isValidCard que contendra solo un parámetro 'number', dentro de la función se creara la variable numcard que contendra a number convertido en cadena para aplicarle la función Array.from que lo convertira en un array ya con reverse se colocaran en posicion inversa, se creara la variable sum que contendra la suma de cada uno de los index del array, por medio del for se hara el recorrido con las condiciones en el algoritmo de Luhn las posiciones empiezan desde '1', comparando con el index da que los valores a multiplicar por 2 con los que no son pares y de index mayor que '0' si cumple esa condicion se creara un nuevo array y si no se iran sumando a la variable sum, teniendo el nuevo array con los de posicion par segun el algoritmo de Luhn, se hara un nuevo for para crear una nueva condicion si el numero en array multiplicado por 2 es menor a 10 se iran sumando a la variable sum , de lo contario si es >=10 se tendran que sumar los digitos, lo cual se hara por medio de otro for que recorra el length y eso ira sumando a sum teniendo el total de sum se sabra si el % de 10 es 0 dara válida sino sera inválida.

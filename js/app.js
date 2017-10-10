@@ -41,12 +41,7 @@ function isValidCard(number){
         sum+=sumalength
     }
   }
-  if (sum%10===0){
-     alert('Su tarjeta es válida')
-  }
-  else{
-    alert('Su tarjeta es invalida')
-  }
+  return sum
 }
 
 console.log(isValidCard(input))
